@@ -1,4 +1,4 @@
-# Piglatin translator made in Rust.
+# Piglatin generator made in Rust.
 
 To-do:
 
