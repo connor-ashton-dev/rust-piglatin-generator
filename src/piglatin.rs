@@ -15,11 +15,7 @@ pub mod utils {
             if is_consonant(&c) {
                 let consonant_slice = &w[..curr_idx + 1];
                 let mut front = consonant_slice.to_string();
-                if consonant_slice.chars().all(|c| c.is_uppercase()) {
-                    front.push_str("AY");
-                } else {
-                    front.push_str("ay");
-                }
+                front.push_str("ay");
                 let rest = &w[curr_idx + 1..];
                 word = format!("{rest}{front} ");
                 break;
